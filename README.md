@@ -4,6 +4,7 @@
 ```
 git clone https://github.com/amirashad/trainsandtowns.git
 cd trainsandtowns
+gradlew test
 gradlew build
 ```
 
