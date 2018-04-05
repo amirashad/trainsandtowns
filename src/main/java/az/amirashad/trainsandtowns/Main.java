@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         if (args.length == 0 || !args[0].equalsIgnoreCase(GraphBuilder.CLI_GRAPH_TEXT)) {
-            System.out.println("Command is not valid.\n\tUsage: java -jar trains.jar Graph: AB2 BC1 CD4");
+            System.out.println("Command is not valid.\n\tUsage: java -jar trainsandtowns.jar Graph: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7");
             return;
         }
 
