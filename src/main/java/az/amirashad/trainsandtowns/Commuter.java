@@ -6,7 +6,6 @@ import az.amirashad.trainsandtowns.graph.Graph;
 import az.amirashad.trainsandtowns.graph.Path;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -46,17 +45,13 @@ public final class Commuter {
     }
 
     public int routeDistance(final String... nodes) {
-        return routeDistance(Arrays.asList(nodes));
-    }
-
-    public int routeDistance(final List<String> nodes) {
         final Path objectivePath = Path.emptyPath();
 
-        for (int i = 1; i < nodes.size(); i++) {
-            objectivePath.addEdge(new Edge(nodes.get(i - 1), nodes.get(i), 0));
+        for (int i = 1; i < nodes.length; i++) {
+            objectivePath.addEdge(new Edge(nodes[i - 1], nodes[i], 0));
         }
 
-        final List<Path> allPaths = routes.getAllPaths(nodes.get(0), nodes.get(nodes.size() - 1), new ContainsPathFilter(objectivePath));
+        final List<Path> allPaths = routes.getAllPaths(nodes[0], nodes[nodes.length - 1], new ContainsPathFilter(objectivePath));
 
         return allPaths.get(0).getPathTotalWeight();
     }

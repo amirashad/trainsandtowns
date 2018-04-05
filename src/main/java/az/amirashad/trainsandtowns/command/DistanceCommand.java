@@ -8,14 +8,14 @@ import java.util.List;
 
 public class DistanceCommand implements Command {
 
-    private List<String> nodes;
+    private String[] nodes;
 
-    public DistanceCommand(List<String> nodes) {
+    public DistanceCommand(String... nodes) {
         this.nodes = nodes;
     }
 
-    public DistanceCommand(String... nodes) {
-        this.nodes = Arrays.asList(nodes);
+    public static DistanceCommand buildFromCLI(String command) {
+        return new DistanceCommand(command.split("-"));
     }
 
     @Override

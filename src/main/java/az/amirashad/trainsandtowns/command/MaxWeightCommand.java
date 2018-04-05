@@ -15,6 +15,12 @@ public class MaxWeightCommand implements Command {
         this.maxWeight = maxWeight;
     }
 
+    public static MaxWeightCommand buildFromCLI(String command) {
+        String maxWeight = command.split(",")[0];
+        String[] cities = command.split(",")[1].split("-");
+        return new MaxWeightCommand(cities[0], cities[1], Integer.valueOf(maxWeight));
+    }
+
     @Override
     public Object execute(Commuter commuter) {
         try {

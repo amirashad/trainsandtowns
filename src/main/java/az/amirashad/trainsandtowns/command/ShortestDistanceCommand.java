@@ -13,6 +13,12 @@ public class ShortestDistanceCommand implements Command {
         this.toCity = toCity;
     }
 
+    public static ShortestDistanceCommand buildFromCLI(String command) {
+        return new ShortestDistanceCommand(
+                String.valueOf(command.charAt(0)),
+                String.valueOf(command.charAt(2)));
+    }
+
     @Override
     public Object execute(Commuter commuter) {
         try {
