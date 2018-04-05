@@ -1,4 +1,4 @@
-package az.amirashad.assessment.graph;
+package az.amirashad.trainsandtowns.graph;
 
 public class Edge {
     private final String startingVertex;

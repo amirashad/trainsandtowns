@@ -1,11 +1,11 @@
 package az.amirashad.trains.graph;
 
-import az.amirashad.assessment.exception.NoSuchRouteException;
-import az.amirashad.assessment.filter.MaxStopsPathFilter;
-import az.amirashad.assessment.filter.MaxWeightPathFilter;
-import az.amirashad.assessment.graph.Edge;
-import az.amirashad.assessment.graph.Graph;
-import az.amirashad.assessment.graph.GraphBuilder;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
+import az.amirashad.trainsandtowns.filter.MaxStopsPathFilter;
+import az.amirashad.trainsandtowns.filter.MaxWeightPathFilter;
+import az.amirashad.trainsandtowns.graph.Edge;
+import az.amirashad.trainsandtowns.graph.Graph;
+import az.amirashad.trainsandtowns.graph.GraphBuilder;
 import org.junit.Before;
 import org.junit.Test;
 

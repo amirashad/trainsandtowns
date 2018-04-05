@@ -1,9 +1,9 @@
-package az.amirashad.assessment;
+package az.amirashad.trainsandtowns;
 
-import az.amirashad.assessment.filter.*;
-import az.amirashad.assessment.graph.Edge;
-import az.amirashad.assessment.graph.Graph;
-import az.amirashad.assessment.graph.Path;
+import az.amirashad.trainsandtowns.filter.*;
+import az.amirashad.trainsandtowns.graph.Edge;
+import az.amirashad.trainsandtowns.graph.Graph;
+import az.amirashad.trainsandtowns.graph.Path;
 
 import java.util.ArrayList;
 import java.util.Arrays;

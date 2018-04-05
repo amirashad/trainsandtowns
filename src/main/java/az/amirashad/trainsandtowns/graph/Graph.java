@@ -1,7 +1,7 @@
-package az.amirashad.assessment.graph;
+package az.amirashad.trainsandtowns.graph;
 
-import az.amirashad.assessment.exception.NoSuchRouteException;
-import az.amirashad.assessment.filter.PathFilter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
+import az.amirashad.trainsandtowns.filter.PathFilter;
 
 import java.util.*;
 

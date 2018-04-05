@@ -1,6 +1,6 @@
-package az.amirashad.assessment.filter;
+package az.amirashad.trainsandtowns.filter;
 
-import az.amirashad.assessment.graph.Path;
+import az.amirashad.trainsandtowns.graph.Path;
 
 public interface PathFilter {
     boolean passFilter(final Path path);

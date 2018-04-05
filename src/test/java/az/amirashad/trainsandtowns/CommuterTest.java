@@ -1,8 +1,8 @@
 package az.amirashad.trains;
 
-import az.amirashad.assessment.Commuter;
-import az.amirashad.assessment.exception.NoSuchRouteException;
-import az.amirashad.assessment.graph.GraphBuilder;
+import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
+import az.amirashad.trainsandtowns.graph.GraphBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 

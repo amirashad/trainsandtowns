@@ -1,8 +1,8 @@
-package az.amirashad.assessment;
+package az.amirashad.trainsandtowns;
 
-import az.amirashad.assessment.command.*;
-import az.amirashad.assessment.graph.Graph;
-import az.amirashad.assessment.graph.GraphBuilder;
+import az.amirashad.trainsandtowns.command.*;
+import az.amirashad.trainsandtowns.graph.Graph;
+import az.amirashad.trainsandtowns.graph.GraphBuilder;
 
 import java.util.Arrays;
 

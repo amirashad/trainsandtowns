@@ -1,4 +1,4 @@
-package az.amirashad.assessment.graph;
+package az.amirashad.trainsandtowns.graph;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package az.amirashad.assessment.graph;
+package az.amirashad.trainsandtowns.graph;
 
 public class GraphBuilder {
     public static final String CLI_GRAPH_TEXT = "Graph:";

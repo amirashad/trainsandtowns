@@ -1,6 +1,6 @@
-package az.amirashad.assessment.command;
+package az.amirashad.trainsandtowns.command;
 
-import az.amirashad.assessment.Commuter;
+import az.amirashad.trainsandtowns.Commuter;
 
 public class ShortestDistanceCommand implements Command {
 

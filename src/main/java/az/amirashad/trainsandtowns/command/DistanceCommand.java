@@ -1,7 +1,7 @@
-package az.amirashad.assessment.command;
+package az.amirashad.trainsandtowns.command;
 
-import az.amirashad.assessment.Commuter;
-import az.amirashad.assessment.exception.NoSuchRouteException;
+import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 
 import java.util.Arrays;
 import java.util.List;

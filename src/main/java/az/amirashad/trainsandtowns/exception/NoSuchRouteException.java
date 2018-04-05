@@ -1,4 +1,4 @@
-package az.amirashad.assessment.exception;
+package az.amirashad.trainsandtowns.exception;
 
 public class NoSuchRouteException extends RuntimeException {
 
