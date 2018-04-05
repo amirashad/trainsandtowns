@@ -15,6 +15,12 @@ public class MaxStopsCommand implements Command {
         this.maxStops = maxStops;
     }
 
+    public static MaxStopsCommand buildFromCLI(String command) {
+        String maxStops = command.split(",")[0];
+        String[] cities = command.split(",")[1].split("-");
+        return new MaxStopsCommand(cities[0], cities[1], Integer.valueOf(maxStops));
+    }
+
     @Override
     public Object execute(Commuter commuter) {
         try {

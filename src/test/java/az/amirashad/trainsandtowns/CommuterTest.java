@@ -11,18 +11,18 @@ import static org.junit.Assert.assertEquals;
 
 public class CommuterTest {
     private final String[] graphArgs = new String[]{"Graph:", "AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7"};
-    private final Commuter commuter = new Commuter(GraphBuilder.buildGraphFromCLI(graphArgs));
+    private final Commuter commuter = new Commuter(GraphBuilder.buildFromCLI(graphArgs));
 
     @Test
     public void distanceForABCShouldBe9() {
         Assert.assertEquals("The distance for the route A-B-C should be 9", 9,
-                commuter.routeDistance(Arrays.asList("A", "B", "C")));
+                commuter.routeDistance("A", "B", "C"));
     }
 
     @Test
     public void distanceForADShouldBe5() {
         assertEquals("The distance for the route A-D should be 5", 5,
-                commuter.routeDistance(Arrays.asList("A", "D")));
+                commuter.routeDistance("A", "D"));
     }
 
     @Test

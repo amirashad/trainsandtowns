@@ -4,4 +4,6 @@ import az.amirashad.trainsandtowns.Commuter;
 
 public interface Command {
     Object execute(Commuter commuter);
+
+
 }

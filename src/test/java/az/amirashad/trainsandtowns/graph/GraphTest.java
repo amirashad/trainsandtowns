@@ -17,7 +17,7 @@ public class GraphTest {
 
     @Before
     public void initGraph() {
-        graph = GraphBuilder.buildGraphFromCLI(new String[]{"Graph:", "AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7"});
+        graph = GraphBuilder.buildFromCLI(new String[]{"Graph:", "AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7"});
     }
 
     @Test(expected = IllegalArgumentException.class)

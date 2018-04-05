@@ -3,7 +3,7 @@ package az.amirashad.trainsandtowns.graph;
 public class GraphBuilder {
     public static final String CLI_GRAPH_TEXT = "Graph:";
 
-    public static Graph buildGraphFromCLI(String[] args) {
+    public static Graph buildFromCLI(String[] args) {
         Graph graph = new Graph();
 
         for (String s : args) {
