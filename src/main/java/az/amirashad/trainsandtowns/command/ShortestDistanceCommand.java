@@ -1,6 +1,7 @@
 package az.amirashad.trainsandtowns.command;
 
 import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 
 public class ShortestDistanceCommand implements Command {
 
@@ -14,6 +15,10 @@ public class ShortestDistanceCommand implements Command {
 
     @Override
     public Object execute(Commuter commuter) {
-        return commuter.shortestDistance(fromCity, toCity);
+        try {
+            return commuter.shortestDistance(fromCity, toCity);
+        } catch (NoSuchRouteException ex) {
+            return "NO SUCH ROUTE";
+        }
     }
 }

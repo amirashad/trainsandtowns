@@ -1,6 +1,7 @@
 package az.amirashad.trainsandtowns.command;
 
 import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 
 public class ExactStopsCommand implements Command {
 
@@ -16,6 +17,10 @@ public class ExactStopsCommand implements Command {
 
     @Override
     public Object execute(Commuter commuter) {
-        return commuter.numberOfPathsWithExactStops(fromCity, toCity, exactStops);
+        try {
+            return commuter.numberOfPathsWithExactStops(fromCity, toCity, exactStops);
+        } catch (NoSuchRouteException ex) {
+            return "NO SUCH ROUTE";
+        }
     }
 }

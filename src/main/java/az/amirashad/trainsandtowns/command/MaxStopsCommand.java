@@ -1,6 +1,7 @@
 package az.amirashad.trainsandtowns.command;
 
 import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 
 public class MaxStopsCommand implements Command {
 
@@ -16,6 +17,10 @@ public class MaxStopsCommand implements Command {
 
     @Override
     public Object execute(Commuter commuter) {
-        return commuter.numberOfPathsWithMaxStops(fromCity, toCity, maxStops);
+        try {
+            return commuter.numberOfPathsWithMaxStops(fromCity, toCity, maxStops);
+        } catch (NoSuchRouteException ex) {
+            return "NO SUCH ROUTE";
+        }
     }
 }

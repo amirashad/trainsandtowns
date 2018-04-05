@@ -4,8 +4,6 @@ import az.amirashad.trainsandtowns.command.*;
 import az.amirashad.trainsandtowns.graph.Graph;
 import az.amirashad.trainsandtowns.graph.GraphBuilder;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {

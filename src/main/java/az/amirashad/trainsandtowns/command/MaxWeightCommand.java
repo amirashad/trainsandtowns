@@ -1,6 +1,7 @@
 package az.amirashad.trainsandtowns.command;
 
 import az.amirashad.trainsandtowns.Commuter;
+import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 
 public class MaxWeightCommand implements Command {
 
@@ -16,6 +17,10 @@ public class MaxWeightCommand implements Command {
 
     @Override
     public Object execute(Commuter commuter) {
-        return commuter.numberOfPathsWithMaxWeight(fromCity, toCity, maxWeight);
+        try {
+            return commuter.numberOfPathsWithMaxWeight(fromCity, toCity, maxWeight);
+        } catch (NoSuchRouteException ex) {
+            return "NO SUCH ROUTE";
+        }
     }
 }
