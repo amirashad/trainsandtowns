@@ -16,7 +16,7 @@ dependencies {
 jar {
     manifest {
         attributes(
-                "Main-Class": "az.amirashad.assessment.Main",
+                "Main-Class": "az.amirashad.trainsandtowns.Main",
                 "Implementation-Version": version
         )
     }
