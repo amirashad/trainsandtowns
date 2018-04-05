@@ -1,7 +1,5 @@
-package az.amirashad.trains.graph;
+package az.amirashad.trainsandtowns.graph;
 
-import az.amirashad.trainsandtowns.graph.Edge;
-import az.amirashad.trainsandtowns.graph.Path;
 import org.junit.Before;
 import org.junit.Test;
 

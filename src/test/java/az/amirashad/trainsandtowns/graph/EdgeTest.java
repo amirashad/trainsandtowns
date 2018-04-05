@@ -1,6 +1,5 @@
-package az.amirashad.trains.graph;
+package az.amirashad.trainsandtowns.graph;
 
-import az.amirashad.trainsandtowns.graph.Edge;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

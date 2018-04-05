@@ -1,11 +1,8 @@
-package az.amirashad.trains.graph;
+package az.amirashad.trainsandtowns.graph;
 
 import az.amirashad.trainsandtowns.exception.NoSuchRouteException;
 import az.amirashad.trainsandtowns.filter.MaxStopsPathFilter;
 import az.amirashad.trainsandtowns.filter.MaxWeightPathFilter;
-import az.amirashad.trainsandtowns.graph.Edge;
-import az.amirashad.trainsandtowns.graph.Graph;
-import az.amirashad.trainsandtowns.graph.GraphBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
