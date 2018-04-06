@@ -22,9 +22,9 @@ public class Main {
                 System.out.println("********************TRAINS*AND*TOWNS**************************\n" +
                         "Type one of the following:\n" +
                         "\t1) To measure distance type 1 from keyboard and press enter\n" +
-                        "\t2) To find trips (with max stops) type 2 from keyboard and press enter\n" +
-                        "\t3) To find trips (with exact stops) type 3 from keyboard and press enter\n" +
-                        "\t4) To find trips (with max distance) type 4 from keyboard and press enter\n" +
+                        "\t2) To find number of trips (with max stops) type 2 from keyboard and press enter\n" +
+                        "\t3) To find number of trips (with exact stops) type 3 from keyboard and press enter\n" +
+                        "\t4) To find number of different routes (with max distance) type 4 from keyboard and press enter\n" +
                         "\t5) To find shortest path type 5 from keyboard and press enter\n" +
                         "\t6) To run default scenario type 6 from keyboard and press enter\n" +
                         "\t0) To exit type 0 from keyboard and press enter" +
@@ -51,7 +51,7 @@ public class Main {
                         command = MaxWeightCommand.buildFromCLI(scanner.next());
                         break;
                     case 5:
-                        System.out.println("Type exact stops count, starting and ending cities (e.g: A-C): ");
+                        System.out.println("Type starting and ending cities (e.g: A-C): ");
                         command = ShortestDistanceCommand.buildFromCLI(scanner.next());
                         break;
                     case 6:
